@@ -1,0 +1,144 @@
+<html>
+	<head>
+		<title>Categories</title>
+		<style>
+
+			#container 
+			{
+    
+				position: absolute;
+        
+				top: 30%;
+ 
+				margin-left:200px;     
+				margin-top: -140px;
+    	
+				background: #C0C0C0;
+
+				width: 80%;
+	  	 
+	
+			}
+
+			form 
+			{
+    
+				margin: 0 auto;
+    
+				margin-top: 20px;
+
+			}
+			body 
+			{
+			height: 100%;
+			}
+
+			.bg { 
+ 			background-image: url("bkg.jpg");
+			height: 100%; 
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			}
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+
+a {
+text-decoration: none !important;
+}
+
+h1 {
+  text-align: right;
+  color:#FA8072;
+}
+
+h2 {
+  text-align: center;
+color: green;
+}			
+</style>
+
+</head>
+<body class = "bg">
+<div> 
+	<h1><center>Welcome to A's Cafe!!!</center></h1>
+	
+	<h2>Make Your Choice.</h2>
+		<div id="container">
+  
+			<div>
+			<button class="accordion">Indian</button>
+			<div class="panel">
+			
+  				<ul>
+					<li> <a href = "Indian-Paneer.html" target = "_blank">Kadai panner</a></li>
+					<li> <a href = "Indian-Gobi-allo.html" target = "_blank">Allo Gobbi </a></li>
+					<li> <a href = "rajma.html" target = "_blank">Rajma </a> </li>
+				</ul>
+			</div>
+		</div>
+
+		<div>
+			<button class="accordion">Chinese</button>
+			<div class="panel">
+  				<ul>
+					<li> <a href = "Chinese-Noodles.html" target = "_blank">Noodles</a></li>
+					<li> <a href = "Chinese-Spring-Roll.html" target = "_blank">Spring Roll </a></li>
+					<li> <a href = "Chinese-Monchow-soup.html" target = "_blank">Monchow Soup </a> </li>
+				</ul>
+			</div>
+		</div>
+
+		<div>
+			<button class="accordion">South Indian</button>
+			<div class="panel">
+  				<ul>
+					<li> <a href = "dosa.html" target = "_blank">Dosa</a></li>
+					<li> <a href = "idli.html" target = "_blank">Idli </a></li>
+					<li> <a href = "vadda.html" target = "_blank">Vadda </a> </li>
+				</ul>
+			</div>
+		</div>
+
+
+		<script>
+		var acc = document.getElementsByClassName("accordion");
+		var i;
+
+		for (i = 0; i < acc.length; i++) {
+  			acc[i].addEventListener("click", function() {
+    			this.classList.toggle("active");
+    			var panel = this.nextElementSibling;
+    			if (panel.style.display === "block") {
+      				panel.style.display = "none";
+    			} else {
+      				panel.style.display = "block";
+    			}
+  			});
+		}
+		</script>
+		</div>
+
+ 	</body>
+</html>

@@ -1,0 +1,4 @@
+Receipe photo dimension: 275x183
+
+check all page title, need to be set, specially for recipe pages.
+Need to be set background color for receipes page., set for monchow soup. take refrence.

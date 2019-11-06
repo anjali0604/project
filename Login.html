@@ -1,0 +1,78 @@
+<html>
+	<head>
+		<title>Login Page</title>
+		<style>
+
+			#container 
+			{
+    
+				position: fixed;
+    
+				height: 280px;
+    
+				top: 50%;
+    
+				left: 50%;
+    
+				margin-top: -140px;
+    
+				margin-left: -240px;
+	
+				background: #AARRGGBB;
+      	 
+	
+			}
+
+			form 
+			{
+    
+				margin: 0 auto;
+    
+				margin-top: 20px;
+
+			}
+			body 
+			{
+			height: 100%;
+			}
+
+			.bg { 
+ 			background-image: url("body-background-image.jpg");
+			height: 100%; 
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			}
+			
+		</style>
+
+	</head>
+	<body class = "bg"> 
+<p style = "text-align: center; color:#FA8072; font-size: 100px;" > A's Cafe</p>
+		<div id="container">
+  
+			<form method = "post" action = "category.html">
+   
+				<table width="500">
+					<tr>
+						<h1 align="center">User Login</h1>
+								
+					</tr>
+					<tr>
+						<th height="50">Username:</th>
+ 						<td><input type="email" id="username" name="username" required>
+</td>
+ 					</tr>
+					<tr>
+						<th height="50">Passowrd:</th>
+ 						<td><input type="password" id="password" name="password"  minlength="4" maxlength="6" required></td>
+ 					</tr>
+					<tr>
+ 						<th height="50" colspan="2"><input type="submit" value="SignIn"/>
+ 					</tr>
+				</table>
+			</form>
+		</div>
+
+ 	</body>
+</html>
